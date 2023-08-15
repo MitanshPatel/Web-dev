@@ -1,0 +1,51 @@
+body{    /* Tag selectors*/
+    background-color: #8cf2e1;
+}
+
+.bg:hover{                             /* <img class="bg circular">  added two classes to same HTML element*/
+    background-color: gold;
+}
+
+.circular{
+    border-radius: 100%;       /* <img class="bg circular"> */
+}
+
+/* Class selectors*/
+.simple{       /*class attribute used in hr    <hr class="simple">     class can be used multiple times of same name for every keyword*/
+    border-style: none;
+    border-top-style: dotted;
+    border-color: grey;
+    border-width: 5px;
+    width: 5%;
+}
+
+.darkLine{
+    border-style: none;
+    border-top-style: dotted;
+    border-color: rgb(83, 82, 82);
+    border-width: 5px;
+    width: 5%;
+}
+
+/* ID selectors*/
+
+#dark{         /*id attribute used in h1    <h1 id="dark">      ID is unique and only can be used once of same name*/
+    color:#1dbfcb;
+}
+#dark:hover{     /* when mouse is hovered over it*/
+    color: gold;
+}
+
+
+/* Tag selectors*/
+h1{
+    color:#1dbfcb;      /* ID and class selectors dominates over tag */
+}
+
+h3{
+    color: #1dbfcb;
+}
+
+h3:hover{
+    color: gold;
+}

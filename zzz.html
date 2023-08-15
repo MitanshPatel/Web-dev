@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Left Panel Example</title>
+  <style>
+    #left-panel {
+      width: 250px;
+      background-color: #58585800;
+      height: 100vh;
+      display: inline;
+    }
+    
+    #content {
+      width: calc(100vw - 250px);
+      padding: 20px;
+      display: inline;
+    }
+    
+    ul {
+      list-style-type: none;
+      padding: 0;
+      display: inline;
+    }
+    
+    li {
+      margin-bottom: 10px;
+      display: inline;
+    }
+    
+    li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div id="left-panel">
+    <ul>
+      <li><a href="#" onclick="changeit('home')">Home</a></li>
+      <li><a href="#" onclick="changeit('contact')">Contact</a></li>
+      <li><a href="#" onclick="changeit('information')">Information</a></li>
+      <li><a href="#" onclick="changeit('guide')">Guide</a></li>
+    </ul>
+  </div>
+  
+  <div id="content">
+    <h1>Welcome to the Left Panel Example!</h1>
+    <p>Select a component from the left panel to see its content here.</p>
+  </div>
+
+  <script>
+    function changeit(info) {
+      var contentDiv = document.getElementById('content');
+      
+      switch (info) {
+        case 'home':
+          contentDiv.innerHTML = '<h1>Home</h1><p>This is the home content.</p>';
+          break;
+        case 'contact':
+          contentDiv.innerHTML = '<h1>Contact</h1><p>This is the contact information.</p>';
+          break;
+        case 'information':
+          contentDiv.innerHTML = '<h1>Information</h1><p>This is some information.</p>';
+          break;
+        case 'guide':
+          contentDiv.innerHTML = '<h1>Guide</h1><p>This is the guide content.</p>';
+          break;
+        default:
+          contentDiv.innerHTML = '<h1>Welcome to the Left Panel Example!</h1><p>Select a component from the left panel to see its content here.</p>';
+      }
+    }
+  </script>
+</body>
+</html>

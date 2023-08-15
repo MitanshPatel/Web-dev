@@ -1,0 +1,173 @@
+body{
+    font-family: 'Montserrat';
+}
+
+h1{
+    font-family: 'Montserrat';
+    font-size: 3.5rem;
+    font-weight: 900;
+    line-height: 1.5;
+  
+}
+
+h2{
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+h3{
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.container-fluid{
+    padding: 3% 15% 7%;
+}
+
+#title{
+    background-color: #ff4c68;
+    color: white;
+}
+
+/* Navigation Bar */
+.navbar{
+    padding: 0 0 4.5rem 0;
+}
+
+.navbar-brand{
+    font-family: 'Ubuntu';
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-item{
+    padding: 0 18px;   /* topbottom leftright */
+}
+
+.nav-link{
+    font-family: 'Montserrat-Light';
+    font-size: 1.5rem;
+}
+
+/* Download Buttons */
+.download{
+    margin: 5% 3% 5% 0;
+}
+
+/* Title Image */
+.tindog-img{
+    width: 20%;
+    transform: rotate(25deg);
+    position: absolute;
+    right: 350px;
+}
+
+/* Features section */
+#features{
+    padding: 7% 15%;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+#features .col-lg-4{          /* col-lg-4 that is in #features will be only targeted   SPACE should be there in between id/class and class/id declaration*/
+    text-align: center;
+}
+
+.fa-h3.fa-tp{                 /* class that contains both fa-h3 and fa-tp will be targetted, SPACE should not be there in between */
+    padding: 1rem 0 1.5rem 0;
+    font-size: 400%;
+    color: #ef8172;
+}
+
+.fa-h3:hover{
+    color: #ff4c68;
+}
+
+.des-p{
+    width: 60%;
+    margin: auto;
+    color: grey;
+}
+
+/* Testimonial Section */
+#testimonials{
+    
+    text-align: center;
+    background-color: #ef8172;
+    color: #fff;
+}
+
+.carousel-item{
+    padding: 7% 15%;
+}
+
+.test-img{
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+#press{
+    text-align: center;
+    background-color: #ef8172;
+    padding-bottom: 3%;
+}
+
+.press-img{
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+
+/* Pricing Section */
+#pricing{
+    padding: 100px;
+    text-align: center;
+}
+
+.price-col{
+    padding: 3% 2%;
+}
+
+/* VIewPort and to be responsive on ipad and mobile */
+@media (max-width:1030px){     /* Will be applied when viewport is less than 1030x */
+
+    #title{
+        text-align: center;
+    }
+
+    .tindog-img{
+        position: static;
+        width: 60%;
+        transform: rotate(0);
+    }
+}
+
+/* CTA */
+#cta{
+    font-family: "Montserrat";
+    padding: 7% 15%;
+    text-align: center;
+    background-color: #ff4c68;
+    color: #fff;
+}
+
+.cta-head{
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+.cta-btn{
+    margin: 50px 30px;
+}
+
+/* Footer */
+#footer{
+    text-align: center;
+    padding: 30px;
+}
+
+.foot-img{
+    margin: 1%;
+}
